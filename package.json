@@ -1,0 +1,23 @@
+{
+  "name": "matchbox-sqs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "matchbox": "^0.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FoundersAS/matchbox-sqs.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/FoundersAS/matchbox-sqs/issues"
+  },
+  "homepage": "https://github.com/FoundersAS/matchbox-sqs#readme"
+}
