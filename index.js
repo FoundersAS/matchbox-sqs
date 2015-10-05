@@ -1,10 +1,10 @@
-import matchbox from matchbox;
+import matchbox from 'matchbox';
 import sqs from  'sqs';
 
 const queue = sqs({
   access: process.env.AWS_ACCESS,
   secret: process.env.AWS_SECRET,
-  region:'us-west-2'
+  region: process.env.AWS_REGION
 });
 
 queue.pull('csv-to-match', function(msg, cb) {
