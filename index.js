@@ -7,6 +7,9 @@ const queue = sqs({
   region: process.env.AWS_REGION
 });
 
+const inbound = process.env.INBOUND_QUEUE || 'csv-to-match';
+const outbound = process.env.OUTBOUND_QUEUE || 'matched-transactions';
+
 queue.pull('csv-to-match', function(msg, cb) {
   const id = msg.id;
   matchbox(msg, function(err, transactions) {
